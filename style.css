@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #eaffff;
+    background-image: url("./Img/elmo4.jpg");
+    background-size: cover;
+    /* font-family: 'Caveat', cursive; */
+    font-family: 'Kalam', cursive;
+    font-weight: 700;
+    color : #000;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.quote_body {
+    /* background-image: url('./Images/book3.jpg'); */
+    background-size: cover;
+    display: flex;
+    flex-direction: row-reverse;
+    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.2);
+    border-radius: 20px;
+}
+
+.quote_container {
+    background: white;
+    width: 500px;
+    max-width: 900px;
+    padding: 4em 0em 3em 2em;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.music_img {
+    background: url("../Images/book5.jpg");
+    background-size: cover;
+    padding: 10em;
+    /* border-radius: 0px 20px 20px 0px; */
+}
+
+.quote_text {
+    font-size: 2rem;
+}
+
+.long-quote {
+    font-size: 2rem;
+}
+
+.fa-quote-left {
+    font-size: 4rem;
+}
+
+.music_img img {
+    height: 100%;
+}
+
+.quote_author {
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5em;
+}
+
+button {
+    color: #fff;
+    background: #333;
+    border-radius: 10px;
+    padding: 0.5rem 1.8rem;
+    font-size: 1rem;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(110%);
+  }
+  
+  button:active {
+    transform: translate(0, 0.3rem);
+    transition: transform 100ms ease-in-out;
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+  }
+
+  .loading-dots {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    /* font-size: 1.5rem; */
+  }
+
+.loading-dots .dot {
+    display: inline;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    position: relative;
+    top: -1em;
+    font-size: 3.5em;
+    opacity: 0;
+    animation: showHideDot 2.5s ease-in-out infinite;
+  }
+
+  .dot .one { animation-delay: 0.2s; }
+  .dot .two { animation-delay: 0.4s; }
+  .dot .three { animation-delay: 0.6s; }
+  
+  @keyframes showHideDot {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    60% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+@media (max-width: 800px) {
+    .quote_body {
+        margin: 10px 20px 0px 20px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .quote_container {
+        width: auto;
+        max-width: 500px;
+        padding: 2em 2em 0em 2em;
+    }
+    
+    .music_img {
+        background: url("./Images/book6.jpg");
+        background-size: cover;
+        padding: 5em 5em 1em 5em;
+    }
+
+    .quote_text {
+        font-size: 2rem;
+    }
+}
